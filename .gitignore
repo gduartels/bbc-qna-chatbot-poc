@@ -3,5 +3,6 @@ notebooks/
 *.pdf
 pdf_files
 .env
-.venv/
+venv/
 .ipynb_checkpoints/
+.streamlit/
