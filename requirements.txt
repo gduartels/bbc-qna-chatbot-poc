@@ -6,3 +6,4 @@ streamlit==1.37.1
 unstructured==0.15.1
 unstructured[md]
 protobuf==3.20
+pysqlite3-binary==0.5.3
