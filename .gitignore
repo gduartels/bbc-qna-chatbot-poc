@@ -1,0 +1,7 @@
+*.ipynb
+notebooks/
+*.pdf
+pdf_files
+.env
+.venv/
+.ipynb_checkpoints/
