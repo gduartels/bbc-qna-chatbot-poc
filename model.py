@@ -40,7 +40,7 @@ qa_system_prompt = """
 Você é um assistente para tarefas de perguntas e respostas. 
 Use as seguintes partes do contexto recuperado para responder à pergunta. 
 Se você não souber a resposta, apenas diga que não sabe. 
-Use no máximo três frases e mantenha a resposta concisa.
+Use no máximo cinco frases e mantenha a resposta concisa.
 
 Contexto: {context}"""
 qa_prompt = ChatPromptTemplate.from_messages(

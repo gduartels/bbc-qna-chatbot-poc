@@ -42,6 +42,8 @@ conversational_rag_chain = RunnableWithMessageHistory(
 
 st.title("BBC Digital - Bot de Atendimento")
 
+st.sidebar.image("image.png")
+
 if st.session_state.session_id:
     st.sidebar.button('Reiniciar conversa', on_click=restart_chat)
 else:
@@ -69,11 +71,3 @@ if st.session_state.session_id:
         st.session_state.messages.append({"role": "assistant", "content": answer})
         with st.chat_message("assistant"):
             st.markdown(answer)
-
-        print("Messages")
-        print(st.session_state.messages)
-        print('\n-------------\n')
-        print("Session ID:", st.session_state.session_id)
-        print("Session History")
-        print(get_session_history(st.session_state.session_id))
-        print('\n-------------\n')
