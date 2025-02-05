@@ -28,7 +28,7 @@ This chatbot leverages LangChain and ChromaDB to provide context-aware answers b
 ### Installation
 ```bash
 # Clone repository
-git clone [your-repository-url]
+git clone https://github.com/gduartels/bbc-qna-chatbot-poc.git
 cd project-directory
 
 # Create virtual environment
@@ -39,3 +39,10 @@ source venv/bin/activate  # Linux/Mac
 # Install dependencies
 pip install -r requirements.txt
 ```
+### Configuration
+
+1. Create secrets.toml in .streamlit/ directory:
+```toml
+OPENAI_API_KEY = "your-api-key-here"
+```
+2. Add documents to md_files/ directory
