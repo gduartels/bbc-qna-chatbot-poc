@@ -41,8 +41,33 @@ pip install -r requirements.txt
 ```
 ### Configuration
 
-1. Create secrets.toml in .streamlit/ directory:
+1. Create `secrets.toml` in `.streamlit/` directory:
 ```toml
 OPENAI_API_KEY = "your-api-key-here"
 ```
-2. Add documents to md_files/ directory
+2. Add documents to `md_files/` directory
+
+## 🛠 Usage
+
+### Generate Embeddings
+```bash
+python embeddings.py
+```
+
+### Run Application
+```bash
+streamlit run app.py
+```
+
+## 📁 Project Structure
+```bash
+├── md_files/              # Document storage
+├── Embedding/             # Vector database
+├── .streamlit/
+│   └── secrets.toml      # API credentials
+├── embeddings.py         # Vector DB creation
+├── model.py              # LLM & chain configuration
+├── app.py                # Streamlit interface
+├── requirements.txt      # Dependencies
+└── README.md             # Documentation
+```
