@@ -13,14 +13,6 @@ openai_api_key = st.secrets["OPENAI_API_KEY"]
 llm = ChatOpenAI(model="gpt-4o-mini", openai_api_key=openai_api_key)
 embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
-# loader = DirectoryLoader('./md_files/', glob="*.md")
-# docs = loader.load()
-
-# text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
-# splits = text_splitter.split_documents(docs)
-# vectorstore = Chroma.from_documents(documents=splits, embedding=embedding)
-# retriever = vectorstore.as_retriever()
-
 persist_dir = 'Embedding'
 vectordb = None
 vectordb = Chroma(persist_directory=persist_dir, embedding_function=embedding)
