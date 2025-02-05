@@ -71,3 +71,15 @@ streamlit run app.py
 ├── requirements.txt      # Dependencies
 └── README.md             # Documentation
 ```
+
+## ⚙ Technical Specifications
+- **Embedding Model:** OpenAI `text-embedding-3-small`
+- **LLM:** GPT-4 (via `gpt-4o-mini` model)
+- **Chunking:** Recursive text splitter (500 chars)
+- **Vector DB:** ChromaDB with persistent storage
+
+## 🌐 Deployment
+
+The application is currently deployed on Streamlit Share:
+🔗 [Live Demo](https://bbc-qna-chatbot-poc.streamlit.app/)
+
